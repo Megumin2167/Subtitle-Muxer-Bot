@@ -1,23 +1,22 @@
-
 import os
 
 class Config:
 
-    BOT_TOKEN = os.environ.get('BOT_TOKEN', 5224309141:AAEp0pDarnUnn_YDHSLnEkjbF2lSKCaw2j8)
-    APP_ID = os.environ.get('APP_ID', 8350415)
-    API_HASH = os.environ.get('API_HASH', 71ffbf3da59683b576b9552fca9bd71e)
+    BOT_TOKEN = os.environ.get('BOT_TOKEN', None)
+    APP_ID = os.environ.get('APP_ID', None)
+    API_HASH = os.environ.get('API_HASH', None)
 
     #comma seperated user id of users who are allowed to use
 
     DOWNLOAD_DIR = 'downloads'
-    OWNER_ID = int(os.environ.get("OWNER_ID", 2031599474))
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", AnimeArchiveXAnimeRequests)  
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1316963576))
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)  
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", "2031599474"))
+    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
     # database session name, example: xurluploader
-    SESSION_NAME = os.environ.get("SESSION_NAME", "sub_mixed_bot")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "")
     # database uri (mongodb)
-    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://s1com:s1com@cluster0.wrrwz.mongodb.net/Cluster0?retryWrites=true&w=majority")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001742703524"))
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
     DOWNLOAD_LOCATION = "./DOWNLOADS"
