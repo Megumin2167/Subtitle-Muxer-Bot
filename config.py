@@ -11,7 +11,7 @@ class Config:
 
     DOWNLOAD_DIR = 'downloads'
     OWNER_ID = int(os.environ.get("OWNER_ID", 2031599474))
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", https://t.me/AnimeArchiveXAnimeRequests)  
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", AnimeArchiveXAnimeRequests)  
     # your telegram id
     OWNER_ID = int(os.environ.get("OWNER_ID", "2031599474"))
     # database session name, example: xurluploader
